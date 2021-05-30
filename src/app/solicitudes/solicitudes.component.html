@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>
+
+        <mat-icon matSuffix>check_circle</mat-icon>
+        <mat-label class="label">Ingrese el texto</mat-label>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+
+        <mat-icon matSuffix>check_circle_outline</mat-icon>
+        <mat-label class="label">Califica el resultado</mat-label>
+
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <mat-form-field appearance="legacy">
+            <mat-label>Escribe tu solicitud</mat-label>
+            <textarea matInput placeholder="Escriba su solicitud" [(ngModel)]="lado"></textarea>
+          </mat-form-field>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div *ngIf="cardMensaje">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Reclamo</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+                Inconformidad con el consumo
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="example-button-row">
+                <button class="Error" mat-raised-button color="primary" (click)="prueba2()" >ERROR</button>
+                <button class="OK" mat-raised-button color="primary">OK</button>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+          <div *ngIf="lista">
+            <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Peticion
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Reclamo</p>
+                <p>Queja</p>
+                <p>Otro</p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <div class="contenedor">
+      <button class="botonF1" (click)="prueba()">
+        <span>Enviar</span>
+      </button>
+
+    </div>
+  </div>
+
+
+
+
+
+  <app-root></app-root>
+</body>
+
+</html>

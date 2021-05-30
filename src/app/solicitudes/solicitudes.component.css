@@ -1,0 +1,90 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .label{
+    margin-left: 15px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  span{
+    transition:.5s;
+    font-size:1rem;
+  }
+
+  .botonF1{
+    width:80px;
+    height:40px;
+    background:#0291c9;
+    right:0;
+    bottom:0;
+    position:absolute;
+    margin-right:16px;
+    margin-bottom:16px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;  
+  }
+
+  .contenedor{
+    width:90px;
+    height:240px;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+  }
+
+  .example-card {
+    max-width: 400px;
+  }
+  
+
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .Error{
+    margin: 8px 8px 8px 0;
+    background-color: rgb(223, 80, 80);
+    color: white;
+  }
+
+  .OK{
+    margin: 8px 8px 8px 0;
+    background-color: rgb(47, 153, 47);
+    color: white;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+ 
